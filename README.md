@@ -1,7 +1,7 @@
 Sorry Initially I pushed code to my repository.
 Please find the link to same with commits
 
-https://gh.fakev.cn/ligilv/onboardingDesign
+https://github.com/ligilv/onboardingDesign
 
 
 
