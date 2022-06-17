@@ -1,37 +1,25 @@
-# Task: React Native Developer Interview
+https://user-images.githubusercontent.com/46999151/174148636-54a40575-eb63-4c7e-b9a7-3900a126e627.mov
 
-This is a task designed to understand the skillset of developers joining Now&Me.
-The task will be assessed on the following factors:
 
-- Dependencies used
-- Git Commits
-- Modularity of the code
-- API design of the components / functions _(API here isn't REST API)_
-- Accessibility of the components
+# onboardingDesign
+nowandme design challenge
 
-## Design
+Mock design
 
-[Link to Figma Design](https://www.figma.com/file/VcWAcNWYeXajRHoIoA2ma6/React-Native-Developer%3A-Now%26Me?node-id=0%3A1)
 
-## Requirements
 
-The goal of the task is to build a mini React Native app (Just the UI bit, no need to create an backend REST API) from the provided design linked above.
+1> Login Screen
 
-— You are free to choose either Expo or Bare React Native
 
-— You are free to choose either JavaScript or TypeScript (preferred)
+<img width="443" alt="Screenshot 2022-06-16 at 9 59 10 PM" src="https://user-images.githubusercontent.com/46999151/174120461-dd39cb7b-e2e1-40ab-bb2a-9944ce275147.png">
 
-— You can fork this GitHub repo and work on the forked repo.
 
-## How to Submit the task?
+2> Home Screen
 
-If you had applied from one of our job posts and we had reach out to you, please follow up on the conversation.
-If not, then email to [nitesh@nowandme.com](mailto:nitesh@nowandme.com) with the task and an intro.
+<img width="443" alt="Screenshot 2022-06-17 at 12 20 11 AM" src="https://user-images.githubusercontent.com/46999151/174143952-0f07864c-7d4e-4291-a215-3504c2d933c6.png">
 
-## Questions?
 
-Please open an issue here on GitHub
 
----
 
-[Twitter](https://twitter.com/nowandme) — [Instagram](https://instagram.com/nowandme) — [Web](https://nowandme.com/explore) — [Android](https://play.google.com/store/apps/details?id=com.nowandme.app) — [iOS](https://apps.apple.com/in/app/now-me-mental-health-community/id1587888702)
+
+

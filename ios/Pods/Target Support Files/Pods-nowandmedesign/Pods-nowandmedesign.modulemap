@@ -1,0 +1,6 @@
+module Pods_nowandmedesign {
+  umbrella header "Pods-nowandmedesign-umbrella.h"
+
+  export *
+  module * { export * }
+}
