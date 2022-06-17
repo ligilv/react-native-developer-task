@@ -9,21 +9,19 @@ import {
   KeyboardAvoidingView,
   Platform,
   Button,
-} from 'react-native';
-import {BlurView, VibrancyView} from '@react-native-community/blur';
-import React, {useEffect, useState} from 'react';
-import {colors} from '../../constants/colors';
-import {useNavigation} from '@react-navigation/native';
-import SignupForm from '../../screens/Signup/SignupForm';
-import LoginForm from '../../screens/Login/LoginForm';
-const OnBoardingModal = ({visible}) => {
-  const [currentModal, setCurrentModal] = useState('login');
-  const navigation = useNavigation();
-  const changeModal = modalname => {
+} from "react-native";
+import { BlurView, VibrancyView } from "@react-native-community/blur";
+import React, { useEffect, useState } from "react";
+import { colors } from "../../constants/colors";
+import SignupForm from "../../screens/Signup/SignupForm";
+import LoginForm from "../../screens/Login/LoginForm";
+const OnBoardingModal = ({ visible }) => {
+  const [currentModal, setCurrentModal] = useState("login");
+  const changeModal = (modalname) => {
     setCurrentModal(modalname);
   };
   const [isModalOpen, setModalOpen] = useState(false);
-  const modalVisible = value => {
+  const modalVisible = (value) => {
     setModalOpen(value);
   };
   useEffect(() => {
@@ -36,25 +34,29 @@ const OnBoardingModal = ({visible}) => {
       visible={isModalOpen}
       onRequestClose={() => {
         setModalOpen(false);
-      }}>
+      }}
+    >
       <KeyboardAvoidingView
-        behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
-        style={{flex: 1}}>
+        behavior={Platform.OS === "ios" ? "padding" : "height"}
+        style={{ flex: 1 }}
+      >
         <BlurView
           blurType="dark"
           reducedTransparencyFallbackColor="black"
           style={{
             flex: 1,
-          }}>
+          }}
+        >
           <ScrollView
             contentContainerStyle={{
-              position: 'absolute',
+              position: "absolute",
               bottom: 0,
-              width: '100%',
+              width: "100%",
               paddingBottom: 10,
             }}
-            style={{}}>
-            {currentModal == 'login' ? (
+            style={{}}
+          >
+            {currentModal == "login" ? (
               <LoginForm
                 isModal={true}
                 changeModal={changeModal}
@@ -62,7 +64,7 @@ const OnBoardingModal = ({visible}) => {
               />
             ) : null}
 
-            {currentModal == 'signup' ? (
+            {currentModal == "signup" ? (
               <SignupForm
                 //prop to check if its modal or screen
                 isModal={true}
@@ -85,8 +87,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: colors.black,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
     paddingHorizontal: 16,
   },
 });
